@@ -1,0 +1,65 @@
+<html>
+
+<head>
+    <title>
+        Assignment 3
+    </title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+
+<body>
+    <div>
+        <form id="myform">
+            <h3>
+                <br />
+                <label>First Name</label> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+                <label>Last Name</label>
+                <br />
+                <input type="First Name" id="myId" required/>
+                <input type="Second Name" required/>
+                <br />
+                <label>Enter email</label>
+                <br />
+                <input type="email" required/>
+                <br />
+                <label>Enter phone number</label>
+                <br />
+                <input type="number" required/>
+                <br />
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br>
+                <label>Enter password</label>
+                <br />
+                <input type="Password" required/>
+                <br />
+
+                <label>Confirm password</label>
+                <br />
+                <input type="password" required/>
+                <br />
+                <button onclick="Signup()">SIGNUP</button>
+                <h2>
+
+                    <a href="login.html"> CLICK FOR LOGIN</a>
+                </h2>
+            </h3>
+    </div>
+    <script>
+        function Signup() {
+            var obj = document.getElementById("myId");
+            var typeobj = obj.value;
+
+            var phone = Number(typeobj);
+            if (isNan(phone)) {
+                console.log("String:", typeObj);
+
+            } else {
+                console.log("Number:", Phone)
+            }
+        }
+    </script>
+</body>
+
+</html>
